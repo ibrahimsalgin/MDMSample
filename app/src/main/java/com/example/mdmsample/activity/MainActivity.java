@@ -3,13 +3,13 @@ package com.example.mdmsample.activity;
 import android.app.admin.DevicePolicyManager;
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
-import com.example.mdmsample.receiver.MDMDeviceAdminReceiver;
-import com.example.mdmsample.fragment.MainFragment;
 import com.example.mdmsample.R;
+import com.example.mdmsample.fragment.MainFragment;
 import com.example.mdmsample.fragment.SetupDeviceAdminFragment;
+import com.example.mdmsample.receiver.MDMDeviceAdminReceiver;
 import com.example.mdmsample.service.MDMService;
 
 public class MainActivity extends AppCompatActivity {

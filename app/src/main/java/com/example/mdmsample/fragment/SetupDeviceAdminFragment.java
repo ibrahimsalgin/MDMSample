@@ -9,8 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.mdmsample.receiver.MDMDeviceAdminReceiver;
 import com.example.mdmsample.R;
+import com.example.mdmsample.receiver.MDMDeviceAdminReceiver;
 
 public class SetupDeviceAdminFragment extends Fragment {
 
@@ -41,7 +41,7 @@ public class SetupDeviceAdminFragment extends Fragment {
 
         //put our component name to the intent
         intent.putExtra(DevicePolicyManager.EXTRA_DEVICE_ADMIN, demoDeviceAdmin);
-        intent.putExtra(DevicePolicyManager.EXTRA_ADD_EXPLANATION, "MDMSample Mobile Device Admin");
+        intent.putExtra(DevicePolicyManager.EXTRA_ADD_EXPLANATION, getString(R.string.app_description));
 
         startActivityForResult(intent, ACTIVATION_REQUEST);
 

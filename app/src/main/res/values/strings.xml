@@ -5,4 +5,12 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_enable_profile">EnableProfileActivity</string>
     <string name="profile_name">MDMSampleProfile</string>
+    <string name="service_connection_message">Please wait until service connected!</string>
+    <string name="youtube_video_id">eZYWMSsb7s8</string>
+    <string name="app_description">MDMSample Mobile Device Admin</string>
+    <string name="device_admin_enabled">Device administrator is enabled.</string>
+    <string name="device_admin_disabled">Device administrator is disabled.</string>
+    <string name="youtube_uri">vnd.youtube:</string>
+    <string name="install_youtube_warning">Please install Youtube App first</string>
+    <string name="camera_state_change_warning">Camera state has been changed!</string>
 </resources>

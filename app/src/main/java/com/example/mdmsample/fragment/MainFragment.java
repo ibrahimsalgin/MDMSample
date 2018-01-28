@@ -130,7 +130,7 @@ public class MainFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         if (!isBound) {
-            Toast.makeText(getContext(), "Please wait until service connected!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), R.string.service_connection_message, Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -146,7 +146,7 @@ public class MainFragment extends Fragment implements View.OnClickListener {
                 getActivity().finish();
                 break;
             case R.id.button_watch_youtube:
-                mMDMService.openYoutube("eZYWMSsb7s8");
+                mMDMService.openYoutube(getString(R.string.youtube_video_id));
                 getActivity().finish();
                 break;
         }

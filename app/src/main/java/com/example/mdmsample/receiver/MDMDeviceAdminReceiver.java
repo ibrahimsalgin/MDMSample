@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.widget.Toast;
 
+import com.example.mdmsample.R;
 import com.example.mdmsample.activity.MainActivity;
 
 /**
@@ -22,7 +23,7 @@ public class MDMDeviceAdminReceiver extends DeviceAdminReceiver {
         super.onEnabled(context, intent);
 
         //inform user to Device administrator is enabled
-        Toast.makeText(context, "Device administrator is enabled.", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, R.string.device_admin_enabled, Toast.LENGTH_SHORT).show();
 
         //create new intent to launch Main Activity
         Intent launch = new Intent(context, MainActivity.class);
@@ -37,7 +38,7 @@ public class MDMDeviceAdminReceiver extends DeviceAdminReceiver {
     @Override
     public void onDisabled(Context context, Intent intent) {
         super.onDisabled(context, intent);
-        Toast.makeText(context, "Device administrator is disabled.", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, R.string.device_admin_disabled, Toast.LENGTH_SHORT).show();
     }
 
 
